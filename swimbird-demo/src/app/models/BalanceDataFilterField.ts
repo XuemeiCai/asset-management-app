@@ -3,5 +3,6 @@ export enum BalanceDataFilterField {
   accountId = 'accountId',
   bank = 'bank',
   balance = 'balance',
-  currency = 'currency'
+  currency = 'currency',
+  empty = ''
 }

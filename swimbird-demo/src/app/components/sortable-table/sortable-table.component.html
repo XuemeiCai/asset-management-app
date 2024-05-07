@@ -1,11 +1,11 @@
-<table class="table table-striped">
+<table class="table table-striped" >
   <thead>
     <tr>
-      <th scope="col" (click)="sortData('id')">ID<i [ngClass]="getSortIcon('id')"></i></th>
-      <th scope="col" (click)="sortData('accountId')">Account ID<i [ngClass]="getSortIcon('accountId')"></i></th>
-      <th scope="col" (click)="sortData('bank')">Bank<i [ngClass]="getSortIcon('bank')"></i></th>
-      <th scope="col" (click)="sortData('balance')">Balance<i [ngClass]="getSortIcon('balance')"></i></th>
-      <th scope="col" (click)="sortData('currency')">Currency<i [ngClass]="getSortIcon('currency')"></i></th>
+      <th scope="col" (click)="sortData(FilterField.id)">ID<i [ngClass]="getSortIcon(FilterField.id)"></i></th>
+      <th scope="col" (click)="sortData(FilterField.accountId)">Account ID<i [ngClass]="getSortIcon(FilterField.accountId)"></i></th>
+      <th scope="col" (click)="sortData(FilterField.bank)">Bank<i [ngClass]="getSortIcon(FilterField.bank)"></i></th>
+      <th scope="col" (click)="sortData(FilterField.balance)">Balance<i [ngClass]="getSortIcon(FilterField.balance)"></i></th>
+      <th scope="col" (click)="sortData(FilterField.currency)">Currency<i [ngClass]="getSortIcon(FilterField.currency)"></i></th>
     </tr>
   </thead>
   <tbody>

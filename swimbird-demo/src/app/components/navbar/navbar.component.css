@@ -1,8 +1,8 @@
 :host {
   margin: 0;
   padding: 0;
-  overflow-x: auto;
 }
+
 nav {
   margin: 0;
   padding:0;
@@ -32,7 +32,7 @@ nav {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .navbar-toggler {
-    margin:10px 0px;
+    margin:10px 5px;
   }
 }
 

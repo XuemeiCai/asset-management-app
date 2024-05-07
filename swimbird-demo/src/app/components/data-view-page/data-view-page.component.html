@@ -15,9 +15,9 @@
 
   <div class="table-container">
     <div class="table-placeholder">
-      <div class="place-holder" *ngIf="!balanceData"></div>
+      <div class="place-holder" *ngIf="!balanceData || balanceData.length === 0"></div>
     </div>
 
-    <sortable-table [balanceData]="balanceData" *ngIf="balanceData"></sortable-table>
+    <sortable-table [balanceData]="balanceData" *ngIf="balanceData&&balanceData.length>0"></sortable-table>
   </div>
 </div>

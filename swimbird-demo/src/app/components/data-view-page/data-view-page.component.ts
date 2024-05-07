@@ -8,19 +8,16 @@ import { AppService } from '../../app.service';
   styleUrls: ['./data-view-page.component.css']
 })
 export class DataViewPageComponent implements OnInit{
-
-
-  balanceData: any;
-  showLoader = false;
+  balanceData: BalanceData[];
   showPlaceholder: boolean;
-  constructor(protected appService: AppService) {
 
+  showLoader = false;
+
+  constructor(protected appService: AppService) {
   }
 
   ngOnInit(): void {
-    if(this.appService.balanceData) {
-      this.balanceData = this.appService.balanceData;
-    }
+    this.balanceData = this.appService.getTableData();
   }
 
   gatherData() {
@@ -30,7 +27,7 @@ export class DataViewPageComponent implements OnInit{
     this.appService.getBalanceData().subscribe(
       (res) => {
         this.balanceData = res;
-        this.appService.balanceData = res;
+        this.appService.updateTableData(res);
         this.showLoader = false;
         this.showPlaceholder = false;
       },

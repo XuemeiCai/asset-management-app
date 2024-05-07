@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { BalanceData } from '../../models/BalanceData';
 import { AppService } from '../../app.service';
+import { BalanceDataFilterField } from '../../models/BalanceDataFilterField';
 
 @Component({
   selector: 'sortable-table',
@@ -11,8 +12,12 @@ export class SortableTableComponent implements OnInit{
   @Input() balanceData: BalanceData[];
 
   sortedData = [];
-  currentSortField = '';
+  currentSortField: BalanceDataFilterField = BalanceDataFilterField.empty;
   isAscending = true;
+  FilterField = BalanceDataFilterField;
+
+  ARROW_UP_ICON = 'bi bi-arrow-up';
+  ARROW_DOWN_DOWN = 'bi bi-arrow-down';
 
   constructor(protected appService: AppService) {
   }
@@ -35,7 +40,7 @@ export class SortableTableComponent implements OnInit{
 
   }
 
-  sortData(field: string) {
+  sortData(field:  BalanceDataFilterField) {
     if (this.currentSortField === field) {
       this.isAscending = !this.isAscending;
     } else {
@@ -60,7 +65,7 @@ export class SortableTableComponent implements OnInit{
     if (this.currentSortField !== field) {
       return '';
     }
-    return this.isAscending ? 'bi bi-arrow-up' : 'bi bi-arrow-down';
+    return this.isAscending ? this.ARROW_UP_ICON : this.ARROW_DOWN_DOWN;
   }
 
 
