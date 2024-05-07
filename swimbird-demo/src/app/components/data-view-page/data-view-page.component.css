@@ -1,0 +1,92 @@
+.show-btn {
+  border-radius: 8px;
+  background-color: #EC8F5E;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  width: 180px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.show-btn:hover {
+  opacity: 0.7;
+
+}
+
+.fa-spinner {
+  font-size:15px;
+  color: #fff;
+}
+
+.report-section {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 30px;
+}
+
+.filter-section {
+  margin: 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.02), 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+
+.filter {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background-color: #0077B5;
+  color: #fff;
+}
+
+.add-filter {
+  background-color: #fff;
+  border: dotted #ADC4CE 1px;
+  color: #ADC4CE;
+}
+
+.table-container {
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.02), 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+
+.place-holder {
+  margin: 20px 10px;
+  min-height: 400px;
+  background-image: url('../../../assets//images/dummy-table.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .show-btn {
+    padding: 5px 8px;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .table-container {
+    margin: 10px;
+  }
+
+  .report-section {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .filter-section {
+    margin: 10px;
+  }
+
+  .filter {
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px 8px;
+  }
+}
+
+

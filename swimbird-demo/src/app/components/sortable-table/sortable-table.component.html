@@ -1,0 +1,20 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" (click)="sortData('id')">ID<i [ngClass]="getSortIcon('id')"></i></th>
+      <th scope="col" (click)="sortData('accountId')">Account ID<i [ngClass]="getSortIcon('accountId')"></i></th>
+      <th scope="col" (click)="sortData('bank')">Bank<i [ngClass]="getSortIcon('bank')"></i></th>
+      <th scope="col" (click)="sortData('balance')">Balance<i [ngClass]="getSortIcon('balance')"></i></th>
+      <th scope="col" (click)="sortData('currency')">Currency<i [ngClass]="getSortIcon('currency')"></i></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of sortedData">
+      <td>{{ item.id }}</td>
+      <td>{{ item.accountId }}</td>
+      <td><div class="bank">{{ item.bank }}</div></td>
+      <td>{{ item.balance }}</td>
+      <td>{{ item.currency }}</td>
+    </tr>
+  </tbody>
+</table>

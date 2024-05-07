@@ -1,0 +1,38 @@
+:host {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+}
+nav {
+  margin: 0;
+  padding:0;
+}
+
+.nav-item {
+  border-bottom: solid 2px transparent;
+  color: black !important;
+}
+
+.nav-item:hover{
+  border-bottom: solid 2px #EC8F5E;
+  color: black !important;
+}
+
+.navbar-toggler {
+  margin:10px 25px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar-toggler {
+    margin:10px 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbar-toggler {
+    margin:10px 0px;
+  }
+}
+
