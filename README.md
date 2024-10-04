@@ -1,7 +1,3 @@
-
-# swimbirdtest
-This is the code assignment from swimbird. You access the web application directly at: http://summer-playground.com/
-
 # Environment
 - **Angular Framework**: Version 15.1.1
 - **Node.js**: Version 18.16.0
