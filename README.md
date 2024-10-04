@@ -7,8 +7,8 @@
 
 # Installation
 ```bash
-git clone https://github.com/XuemeiCai/swimbirdtest.git
-cd swimbirdtest
+git clone https://github.com/XuemeiCai/asset-management-app.git
+cd asset-management-app
 npm install
 ng serve
 ```
